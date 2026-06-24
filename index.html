@@ -1,432 +1,424 @@
 <!doctype html>
 <html lang="id" class="scroll-smooth">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>bydobie | Custom Cookies & Cookie Bouquet</title>
     <meta name="description" content="Temukan berbagai pilihan custom cookies dan buket manis yang dibuat khusus untuk merayakan hari spesialmu. Handmade dengan cinta oleh bydobie." />
-    
+
     <!-- Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <!-- App Entry Stylesheet -->
     <link rel="stylesheet" href="/src/index.css" />
-  </head>
-  <body class="antialiased relative bg-cream text-charcoal overflow-x-hidden font-body">
+</head>
+
+<body class="antialiased relative bg-cream text-charcoal overflow-x-hidden font-body">
 
     <!-- 1. NAVBAR -->
     <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center">
-      <a href="#" class="font-display font-bold text-2xl text-mocha hover:text-cocoa transition-colors">bydobie</a>
+        <a href="#" class="font-display font-bold text-2xl text-mocha hover:text-cocoa transition-colors">bydobie</a>
 
-      <div class="hidden md:flex space-x-8 font-body font-medium text-charcoal ml-auto">
-        <a href="#pricelist" class="hover:text-mocha transition-colors">Pricelist</a>
-        <a href="#gallery-section" class="hover:text-mocha transition-colors">Gallery</a>
-        <a href="#cta" class="hover:text-mocha transition-colors">Order</a>
-      </div>
+        <div class="hidden md:flex space-x-8 font-body font-medium text-charcoal ml-auto">
+            <a href="#pricelist" class="hover:text-mocha transition-colors">Pricelist</a>
+            <a href="#gallery-section" class="hover:text-mocha transition-colors">Gallery</a>
+            <a href="#cta" class="hover:text-mocha transition-colors">Order</a>
+        </div>
 
-      <button id="menu-btn" class="md:hidden text-charcoal focus:outline-none" aria-label="Toggle Menu">
+        <button id="menu-btn" class="md:hidden text-charcoal focus:outline-none" aria-label="Toggle Menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </button>
 
-      <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-cream/95 backdrop-blur-md shadow-md border-t border-latte/50 flex flex-col items-center py-6 space-y-4 md:hidden">
-        <a href="#pricelist" class="font-body font-medium text-charcoal hover:text-mocha mobile-link">Pricelist</a>
-        <a href="#gallery-section" class="font-body font-medium text-charcoal hover:text-mocha mobile-link">Gallery</a>
-        <a href="#cta" class="font-body font-medium text-charcoal hover:text-mocha mobile-link">Order</a>
-      </div>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-cream/95 backdrop-blur-md shadow-md border-t border-latte/50 flex flex-col items-center py-6 space-y-4 md:hidden">
+            <a href="#pricelist" class="font-body font-medium text-charcoal hover:text-mocha mobile-link">Pricelist</a>
+            <a href="#gallery-section" class="font-body font-medium text-charcoal hover:text-mocha mobile-link">Gallery</a>
+            <a href="#cta" class="font-body font-medium text-charcoal hover:text-mocha mobile-link">Order</a>
+        </div>
     </nav>
 
     <!-- 2. HERO SECTION -->
     <section id="hero" class="relative min-h-screen flex items-center overflow-hidden pt-20 px-6 md:px-12">
-      <div id="hero-bg" class="absolute -inset-[20%] -z-10 bg-gradient-to-br from-cream to-latte/30">
-        <div class="absolute top-0 right-0 w-[60vw] h-[60vw] bg-blush/40 rounded-full blur-[80px]"></div>
-        <div class="absolute bottom-0 left-0 w-[50vw] h-[50vw] bg-latte/60 rounded-full blur-[100px]"></div>
-      </div>
+        <div id="hero-bg" class="absolute -inset-[20%] -z-10 bg-gradient-to-br from-cream to-latte/30">
+            <div class="absolute top-0 right-0 w-[60vw] h-[60vw] bg-blush/40 rounded-full blur-[80px]"></div>
+            <div class="absolute bottom-0 left-0 w-[50vw] h-[50vw] bg-latte/60 rounded-full blur-[100px]"></div>
+        </div>
 
-      <div class="absolute top-[20%] left-[5%] w-16 h-16 rounded-full bg-blush/50 blur-md -z-10"></div>
-      <div class="absolute bottom-[20%] right-[10%] w-24 h-24 rounded-full bg-mocha/20 blur-lg -z-10"></div>
+        <div class="absolute top-[20%] left-[5%] w-16 h-16 rounded-full bg-blush/50 blur-md -z-10"></div>
+        <div class="absolute bottom-[20%] right-[10%] w-24 h-24 rounded-full bg-mocha/20 blur-lg -z-10"></div>
 
-      <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12 md:gap-8">
-        <div class="flex-1 text-center md:text-left z-10">
-          <span id="hero-label" class="inline-block px-4 py-1 rounded-full bg-white/60 border border-latte text-mocha text-sm font-medium mb-6 backdrop-blur-sm gsap-fade-up">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12 md:gap-8">
+            <div class="flex-1 text-center md:text-left z-10">
+                <span id="hero-label" class="inline-block px-4 py-1 rounded-full bg-white/60 border border-latte text-mocha text-sm font-medium mb-6 backdrop-blur-sm gsap-fade-up">
             Handmade with love
           </span>
-          <h1 id="hero-title" class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-charcoal leading-tight mb-4 gsap-fade-up">
-            <span>bydobie</span>
-            <br class="hidden md:block" />
-            <span class="italic text-mocha font-normal">cookies</span>
-          </h1>
-          <p id="hero-sub" class="font-body text-charcoal/80 mb-8 max-w-md mx-auto md:mx-0 gsap-fade-up">
-            Temukan berbagai pilihan custom cookies dan buket manis yang dibuat khusus untuk merayakan hari spesialmu.
-          </p>
-          <div id="hero-ctas" class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 gsap-fade-up">
-            <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20saya%20mau%20order%20dong!" target="_blank"
-              class="bg-[#25D366] text-white px-8 py-4 rounded-full font-body font-bold text-base hover:bg-[#1DA851] transition-transform hover:-translate-y-1 shadow-lg shadow-[#25D366]/30 flex items-center gap-2 w-full sm:w-auto justify-center">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <h1 id="hero-title" class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-charcoal leading-tight mb-4 gsap-fade-up">
+                    <span>bydobie</span>
+                    <br class="hidden md:block" />
+                    <span class="italic text-mocha font-normal">cookies</span>
+                </h1>
+                <p id="hero-sub" class="font-body text-charcoal/80 mb-8 max-w-md mx-auto md:mx-0 gsap-fade-up">
+                    Temukan berbagai pilihan custom cookies dan buket manis yang dibuat khusus untuk merayakan hari spesialmu.
+                </p>
+                <div id="hero-ctas" class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 gsap-fade-up">
+                    <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20saya%20mau%20order%20dong!" target="_blank" class="bg-[#25D366] text-white px-8 py-4 rounded-full font-body font-bold text-base hover:bg-[#1DA851] transition-transform hover:-translate-y-1 shadow-lg shadow-[#25D366]/30 flex items-center gap-2 w-full sm:w-auto justify-center">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-              </svg>
-              Order Here
-            </a>
-            <a href="#pricelist" class="px-8 py-4 rounded-full font-body font-medium text-mocha border-2 border-latte hover:border-mocha transition-all bg-white/50 backdrop-blur-sm w-full sm:w-auto text-center">
+              </svg> Order Here
+                    </a>
+                    <a href="#pricelist" class="px-8 py-4 rounded-full font-body font-medium text-mocha border-2 border-latte hover:border-mocha transition-all bg-white/50 backdrop-blur-sm w-full sm:w-auto text-center">
               Lihat Pricelist
             </a>
-          </div>
+                </div>
+            </div>
+
+            <div id="hero-img-wrap" class="flex-1 relative w-full max-w-md mx-auto gsap-fade-up">
+                <div class="relative w-full aspect-square bg-latte/30 blob-shape overflow-hidden border-8 border-white/40 shadow-xl z-10">
+                    <img src="/images/hero_main.jpg" alt="Featured Cookie" class="w-full h-full object-cover" width="800" height="800" fetchpriority="high" decoding="async" />
+                </div>
+                <div class="absolute -top-4 -right-4 bg-white px-4 py-2 rounded-2xl shadow-lg border border-latte z-20 transform rotate-6 animate-bounce" style="animation-duration: 3s;">
+                    <span class="font-display font-bold text-rose">Favorite ✨</span>
+                </div>
+                <div class="absolute bottom-10 -left-8 bg-white px-4 py-3 rounded-2xl shadow-lg border border-latte z-20 flex items-center gap-2 transform -rotate-3">
+                    <span class="font-display font-bold text-rose">Yum and Cute 👍</span>
+                </div>
+            </div>
         </div>
 
-        <div id="hero-img-wrap" class="flex-1 relative w-full max-w-md mx-auto gsap-fade-up">
-          <div class="relative w-full aspect-square bg-latte/30 blob-shape overflow-hidden border-8 border-white/40 shadow-xl z-10">
-            <img src="/images/hero_main.jpg" alt="Featured Cookie" class="w-full h-full object-cover" width="800" height="800" fetchpriority="high" decoding="async" />
-          </div>
-          <div class="absolute -top-4 -right-4 bg-white px-4 py-2 rounded-2xl shadow-lg border border-latte z-20 transform rotate-6 animate-bounce" style="animation-duration: 3s;">
-            <span class="font-display font-bold text-rose">Favorite ✨</span>
-          </div>
-          <div class="absolute bottom-10 -left-8 bg-white px-4 py-3 rounded-2xl shadow-lg border border-latte z-20 flex items-center gap-2 transform -rotate-3">
-            <span class="font-display font-bold text-rose">Yum and Cute 👍</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="wave-divider">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" />
         </svg>
-      </div>
+        </div>
     </section>
 
     <!-- 4. PRICELIST SECTION -->
     <section id="pricelist" class="py-24 px-6 md:px-12 relative">
-      <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-16 gsap-fade-up">
-          <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Pricelist</h2>
-          <p class="font-body text-cocoa max-w-2xl mx-auto">Pilih kreasi manis yang paling cocok untuk momen spesialmu. Order 7 hari sebelum tanggal pengiriman.</p>
-        </div>
-
-        <div class="flex flex-col gap-24">
-          <!-- CATEGORY 1 - Custom Cookies -->
-          <div class="flex flex-col md:flex-row items-stretch gap-8 lg:gap-16 gsap-fade-up">
-            <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden bg-latte/30 shadow-lg relative aspect-[3/4] md:aspect-auto md:min-h-[400px]">
-              <img src="/images/custom_cookies_new.jpg" alt="Custom Cookies" class="w-full h-full object-cover absolute inset-0" width="600" height="600" loading="lazy" decoding="async" />
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 gsap-fade-up">
+                <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Pricelist</h2>
+                <p class="font-body text-cocoa max-w-2xl mx-auto">Pilih kreasi manis yang paling cocok untuk momen spesialmu. Order 7 hari sebelum tanggal pengiriman.</p>
             </div>
-            <div class="w-full md:w-1/2 flex flex-col justify-center py-6">
-              <h3 class="font-display text-4xl lg:text-5xl text-charcoal mb-4 flex items-center gap-3">
-                <span>🍪</span> Custom Cookies
-              </h3>
-              <p class="font-body text-charcoal/70 mb-8 text-base lg:text-lg">
-                Butter cookies satuan dengan desain yang bisa disesuaikan dengan idemu. Cocok untuk suvenir event ulang tahun, pernikahan, resign dan lainnnya.
-              </p>
-              <div class="bg-white/50 backdrop-blur-sm border border-latte rounded-2xl p-6 mb-8">
-                <ul class="space-y-4 font-body text-charcoal">
-                  <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Desain bebas (logo, karakter, tulisan)</li>
-                  <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Termasuk plastik seal per pcs</li>
-                  <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Rasa butter vanilla yang premium</li>
-                  <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Minimum order 10 pcs</li>
-                  <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Add on Rp1.000 untuk custom card/cookie</li>
-                </ul>
-              </div>
-              <div class="flex items-center justify-between mt-auto">
-                <div>
-                  <p class="text-sm font-body text-charcoal/50 mb-1">Mulai dari</p>
-                  <p class="font-display text-3xl text-mocha font-bold">Rp 10.000<span class="text-base font-body text-charcoal/50 font-normal">/pcs</span></p>
-                </div>
-                <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20tanya%20Custom%20Cookies%20dong" target="_blank"
-                  class="px-8 py-4 rounded-xl bg-mocha text-white font-medium hover:bg-cocoa transition-colors shadow-md">
+
+            <div class="flex flex-col gap-24">
+                <!-- CATEGORY 1 - Custom Cookies -->
+                <div class="flex flex-col md:flex-row items-stretch gap-8 lg:gap-16 gsap-fade-up">
+                    <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden bg-latte/30 shadow-lg relative aspect-[3/4] md:aspect-auto md:min-h-[400px]">
+                        <img src="/images/custom_cookies_new.jpg" alt="Custom Cookies" class="w-full h-full object-cover absolute inset-0" width="600" height="600" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col justify-center py-6">
+                        <h3 class="font-display text-4xl lg:text-5xl text-charcoal mb-4 flex items-center gap-3">
+                            <span>🍪</span> Custom Cookies
+                        </h3>
+                        <p class="font-body text-charcoal/70 mb-8 text-base lg:text-lg">
+                            Butter cookies satuan dengan desain yang bisa disesuaikan dengan idemu. Cocok untuk suvenir event ulang tahun, pernikahan, resign dan lainnnya.
+                        </p>
+                        <div class="bg-white/50 backdrop-blur-sm border border-latte rounded-2xl p-6 mb-8">
+                            <ul class="space-y-4 font-body text-charcoal">
+                                <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Desain bebas (logo, karakter, tulisan)</li>
+                                <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Termasuk plastik seal per pcs</li>
+                                <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Rasa butter vanilla yang premium</li>
+                                <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Minimum order 10 pcs</li>
+                                <li class="flex items-start gap-3"><span class="text-mocha mt-0.5">✓</span> Add on Rp1.000 untuk custom card/cookie</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <div>
+                                <p class="text-sm font-body text-charcoal/50 mb-1">Mulai dari</p>
+                                <p class="font-display text-3xl text-mocha font-bold">Rp 10.000<span class="text-base font-body text-charcoal/50 font-normal">/pcs</span></p>
+                            </div>
+                            <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20tanya%20Custom%20Cookies%20dong" target="_blank" class="px-8 py-4 rounded-xl bg-mocha text-white font-medium hover:bg-cocoa transition-colors shadow-md">
                   Tanya Detail
                 </a>
-              </div>
-            </div>
-          </div>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- CATEGORY 2 - Cookie Bouquet -->
-          <div class="flex flex-col md:flex-row-reverse items-stretch gap-8 lg:gap-16 gsap-fade-up">
-            <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden bg-blush/30 shadow-lg relative aspect-[3/4] md:aspect-auto md:min-h-[400px] group">
-              <div id="bouquet-carousel" class="flex overflow-x-auto snap-x snap-mandatory h-full hide-scrollbar" style="scroll-behavior: smooth;">
-                <div class="w-full shrink-0 snap-center relative h-full">
-                  <img src="/images/bouquet_s.png" alt="Cookie Bouquet Size S" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
-                  <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size S</div>
-                </div>
-                <div class="w-full shrink-0 snap-center relative h-full">
-                  <img src="/images/bouquet_m.png" alt="Cookie Bouquet Size M" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
-                  <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size M</div>
-                </div>
-                <div class="w-full shrink-0 snap-center relative h-full">
-                  <img src="/images/bouquet_l.png" alt="Cookie Bouquet Size L" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
-                  <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size L</div>
-                </div>
-                <div class="w-full shrink-0 snap-center relative h-full">
-                  <img src="/images/bouquet_xl.png" alt="Cookie Bouquet Size Jumbo" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
-                  <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size Jumbo</div>
-                </div>
-              </div>
+                <!-- CATEGORY 2 - Cookie Bouquet -->
+                <div class="flex flex-col md:flex-row-reverse items-stretch gap-8 lg:gap-16 gsap-fade-up">
+                    <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden bg-blush/30 shadow-lg relative aspect-[3/4] md:aspect-auto md:min-h-[400px] group">
+                        <div id="bouquet-carousel" class="flex overflow-x-auto snap-x snap-mandatory h-full hide-scrollbar" style="scroll-behavior: smooth;">
+                            <div class="w-full shrink-0 snap-center relative h-full">
+                                <img src="/images/bouquet_s.png" alt="Cookie Bouquet Size S" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
+                                <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size S</div>
+                            </div>
+                            <div class="w-full shrink-0 snap-center relative h-full">
+                                <img src="/images/bouquet_m.png" alt="Cookie Bouquet Size M" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
+                                <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size M</div>
+                            </div>
+                            <div class="w-full shrink-0 snap-center relative h-full">
+                                <img src="/images/bouquet_l.png" alt="Cookie Bouquet Size L" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
+                                <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size L</div>
+                            </div>
+                            <div class="w-full shrink-0 snap-center relative h-full">
+                                <img src="/images/bouquet_xl.png" alt="Cookie Bouquet Size Jumbo" class="w-full h-full object-cover absolute inset-0" width="500" height="500" decoding="async" />
+                                <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-charcoal shadow-sm">Size Jumbo</div>
+                            </div>
+                        </div>
 
-              <div class="absolute inset-y-0 left-4 flex items-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
-                <button id="carousel-prev" aria-label="Previous image"
-                  class="bg-white/80 backdrop-blur-sm hover:bg-white text-charcoal rounded-full p-2.5 shadow-lg transition-colors focus:outline-none focus:ring-2 focus:ring-mocha">
+                        <div class="absolute inset-y-0 left-4 flex items-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                            <button id="carousel-prev" aria-label="Previous image" class="bg-white/80 backdrop-blur-sm hover:bg-white text-charcoal rounded-full p-2.5 shadow-lg transition-colors focus:outline-none focus:ring-2 focus:ring-mocha">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
-              </div>
-              <div class="absolute inset-y-0 right-4 flex items-center opacity-80 md:opacity-0 md:group-hover:opacity-100 transition-opacity z-10">
-                <button id="carousel-next" aria-label="Next image"
-                  class="bg-white/80 backdrop-blur-sm hover:bg-white text-charcoal rounded-full p-2.5 shadow-lg transition-colors animate-bounce-x focus:outline-none focus:ring-2 focus:ring-mocha">
+                        </div>
+                        <div class="absolute inset-y-0 right-4 flex items-center opacity-80 md:opacity-0 md:group-hover:opacity-100 transition-opacity z-10">
+                            <button id="carousel-next" aria-label="Next image" class="bg-white/80 backdrop-blur-sm hover:bg-white text-charcoal rounded-full p-2.5 shadow-lg transition-colors animate-bounce-x focus:outline-none focus:ring-2 focus:ring-mocha">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
-              </div>
+                        </div>
 
-              <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-                <button class="bouquet-dot w-2 h-2 rounded-full bg-mocha transition-all duration-300 ring-2 ring-white" aria-label="Slide 1"></button>
-                <button class="bouquet-dot w-2 h-2 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" aria-label="Slide 2"></button>
-                <button class="bouquet-dot w-2 h-2 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" aria-label="Slide 3"></button>
-                <button class="bouquet-dot w-2 h-2 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" aria-label="Slide 4"></button>
-              </div>
-            </div>
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                            <button class="bouquet-dot w-2 h-2 rounded-full bg-mocha transition-all duration-300 ring-2 ring-white" aria-label="Slide 1"></button>
+                            <button class="bouquet-dot w-2 h-2 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" aria-label="Slide 2"></button>
+                            <button class="bouquet-dot w-2 h-2 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" aria-label="Slide 3"></button>
+                            <button class="bouquet-dot w-2 h-2 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" aria-label="Slide 4"></button>
+                        </div>
+                    </div>
 
-            <div class="w-full md:w-1/2 flex flex-col justify-center py-6">
-              <h3 class="font-display text-4xl lg:text-5xl text-charcoal mb-4 flex items-center gap-3">
-                <span>💐</span> Cookie Bouquet
-              </h3>
-              <p class="font-body text-charcoal/70 mb-8 text-base lg:text-lg">
-                Cookies yang dirangkai menjadi buket bunga. Hadiah romantis yang bisa dimakan! Sudah termasuk wrapping & kartu ucapan. Tersedia dalam 3 ukuran.
-              </p>
-              <div class="space-y-4 mb-8">
-                <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
-                  <div>
-                    <p class="font-body font-bold text-lg text-charcoal">Small</p>
-                    <p class="text-sm text-charcoal/60">7 Pcs Cookies</p>
-                  </div>
-                  <div class="text-right">
-                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
-                    <p class="font-display font-bold text-2xl text-mocha">Rp 100.000</p>
-                  </div>
-                </div>
-                <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
-                  <div>
-                    <p class="font-body font-bold text-lg text-charcoal">Medium</p>
-                    <p class="text-sm text-charcoal/60">10 Pcs Cookies</p>
-                  </div>
-                  <div class="text-right">
-                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
-                    <p class="font-display font-bold text-2xl text-mocha">Rp 150.000</p>
-                  </div>
-                </div>
-                <div class="flex justify-between items-center bg-rose/10 backdrop-blur-sm p-5 rounded-2xl border-2 border-rose/40 relative transform hover:-translate-y-1 transition-transform shadow-sm">
-                  <div class="absolute -top-3 right-4 bg-rose text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Most Popular</div>
-                  <div>
-                    <p class="font-body font-bold text-lg text-charcoal">Large</p>
-                    <p class="text-sm text-charcoal/60">14 Pcs Cookies</p>
-                  </div>
-                  <div class="text-right">
-                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
-                    <p class="font-display font-bold text-2xl text-mocha">Rp 205.000</p>
-                  </div>
-                </div>
-                <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
-                  <div>
-                    <p class="font-body font-bold text-lg text-charcoal">Jumbo</p>
-                    <p class="text-sm text-charcoal/60">24 Pcs Cookies</p>
-                  </div>
-                  <div class="text-right">
-                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
-                    <p class="font-display font-bold text-2xl text-mocha">Rp 315.000</p>
-                  </div>
-                </div>
-              </div>
-              <p class="font-body text-xs text-charcoal/50 italic mb-6 leading-relaxed">
-                * Harga di atas untuk 1 karakter custom + sisa cookies berbentuk bunga. Untuk custom lebih dari 1 karakter atau bentuk lain, harga menyesuaikan tingkat kesulitan.
-              </p>
-              <div class="mt-auto">
-                <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20tanya%20Cookie%20Bouquet%20dong" target="_blank"
-                  class="px-8 py-4 rounded-xl bg-mocha text-white font-medium hover:bg-cocoa transition-colors shadow-md">
+                    <div class="w-full md:w-1/2 flex flex-col justify-center py-6">
+                        <h3 class="font-display text-4xl lg:text-5xl text-charcoal mb-4 flex items-center gap-3">
+                            <span>💐</span> Cookie Bouquet
+                        </h3>
+                        <p class="font-body text-charcoal/70 mb-8 text-base lg:text-lg">
+                            Cookies yang dirangkai menjadi buket bunga. Hadiah romantis yang bisa dimakan! Sudah termasuk wrapping & kartu ucapan. Tersedia dalam 4 ukuran.
+                        </p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
+                                <div>
+                                    <p class="font-body font-bold text-lg text-charcoal">Small</p>
+                                    <p class="text-sm text-charcoal/60">7 Pcs Cookies</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
+                                    <p class="font-display font-bold text-2xl text-mocha">Rp 100.000</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
+                                <div>
+                                    <p class="font-body font-bold text-lg text-charcoal">Medium</p>
+                                    <p class="text-sm text-charcoal/60">10 Pcs Cookies</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
+                                    <p class="font-display font-bold text-2xl text-mocha">Rp 150.000</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center bg-rose/10 backdrop-blur-sm p-5 rounded-2xl border-2 border-rose/40 relative transform hover:-translate-y-1 transition-transform shadow-sm">
+                                <div class="absolute -top-3 right-4 bg-rose text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Most Popular</div>
+                                <div>
+                                    <p class="font-body font-bold text-lg text-charcoal">Large</p>
+                                    <p class="text-sm text-charcoal/60">14 Pcs Cookies</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
+                                    <p class="font-display font-bold text-2xl text-mocha">Rp 205.000</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
+                                <div>
+                                    <p class="font-body font-bold text-lg text-charcoal">Jumbo</p>
+                                    <p class="text-sm text-charcoal/60">24 Pcs Cookies</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs font-body text-charcoal/40 mb-0.5">Mulai dari</p>
+                                    <p class="font-display font-bold text-2xl text-mocha">Rp 315.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="font-body text-xs text-charcoal/50 italic mb-6 leading-relaxed">
+                            * Harga di atas untuk 1 karakter custom + sisa cookies berbentuk bunga. Untuk custom lebih dari 1 karakter atau bentuk lain, harga menyesuaikan tingkat kesulitan.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20tanya%20Cookie%20Bouquet%20dong" target="_blank" class="px-8 py-4 rounded-xl bg-mocha text-white font-medium hover:bg-cocoa transition-colors shadow-md">
                   Tanya Detail
                 </a>
-              </div>
-            </div>
-          </div>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- CATEGORY 3 - Kue Kering -->
-          <div class="flex flex-col md:flex-row items-stretch gap-8 lg:gap-16 gsap-fade-up">
-            <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden bg-cream/50 shadow-lg relative aspect-[3/4] md:aspect-auto md:min-h-[400px]">
-              <img src="/images/kue_kering.jpg" alt="Kue Kering" class="w-full h-full object-cover absolute inset-0" width="600" height="600" loading="lazy" decoding="async" />
-            </div>
-            <div class="w-full md:w-1/2 flex flex-col justify-center py-6">
-              <h3 class="font-display text-4xl lg:text-5xl text-charcoal mb-4 flex items-center gap-3">
-                <span>🫙</span> Kue Kering
-              </h3>
-              <p class="font-body text-charcoal/70 mb-8 text-base lg:text-lg">
-                Kue kering klasik favorit keluarga. Tersedia dalam kemasan toples size 400ml, cocok untuk hantaran di rumah atau hantaran spesial.
-              </p>
-              <div class="space-y-4 mb-8">
-                <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
-                  <div>
-                    <p class="font-body font-bold text-lg text-charcoal">Sagu Keju</p>
-                    <p class="text-sm text-charcoal/60">Lumer di mulut</p>
-                  </div>
-                  <p class="font-display font-bold text-2xl text-mocha">Rp 65.000</p>
-                </div>
-                <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
-                  <div>
-                    <p class="font-body font-bold text-lg text-charcoal">Lidah Kucing</p>
-                    <p class="text-sm text-charcoal/60">Renyah & gurih</p>
-                  </div>
-                  <p class="font-display font-bold text-2xl text-mocha">Rp 65.000</p>
-                </div>
-              </div>
-              <div class="mt-auto">
-                <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20tanya%20Kue%20Kering%20dong" target="_blank"
-                  class="px-8 py-4 rounded-xl bg-mocha text-white font-medium hover:bg-cocoa transition-colors shadow-md">
+                <!-- CATEGORY 3 - Kue Kering -->
+                <div class="flex flex-col md:flex-row items-stretch gap-8 lg:gap-16 gsap-fade-up">
+                    <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden bg-cream/50 shadow-lg relative aspect-[3/4] md:aspect-auto md:min-h-[400px]">
+                        <img src="/images/kue_kering.jpg" alt="Kue Kering" class="w-full h-full object-cover absolute inset-0" width="600" height="600" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col justify-center py-6">
+                        <h3 class="font-display text-4xl lg:text-5xl text-charcoal mb-4 flex items-center gap-3">
+                            <span>🫙</span> Kue Kering
+                        </h3>
+                        <p class="font-body text-charcoal/70 mb-8 text-base lg:text-lg">
+                            Kue kering klasik favorit keluarga. Tersedia dalam kemasan toples size 400ml, cocok untuk hantaran di rumah atau hantaran spesial.
+                        </p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
+                                <div>
+                                    <p class="font-body font-bold text-lg text-charcoal">Sagu Keju</p>
+                                    <p class="text-sm text-charcoal/60">Lumer di mulut</p>
+                                </div>
+                                <p class="font-display font-bold text-2xl text-mocha">Rp 65.000</p>
+                            </div>
+                            <div class="flex justify-between items-center bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-latte hover:border-mocha transition-colors">
+                                <div>
+                                    <p class="font-body font-bold text-lg text-charcoal">Lidah Kucing</p>
+                                    <p class="text-sm text-charcoal/60">Renyah & gurih</p>
+                                </div>
+                                <p class="font-display font-bold text-2xl text-mocha">Rp 65.000</p>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20tanya%20Kue%20Kering%20dong" target="_blank" class="px-8 py-4 rounded-xl bg-mocha text-white font-medium hover:bg-cocoa transition-colors shadow-md">
                   Tanya Detail
                 </a>
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- 4.5 INGREDIENTS & ALLERGY SECTION -->
     <section id="ingredients" class="py-12 px-6 md:px-12 bg-cream/30 relative overflow-hidden">
-      <div class="max-w-4xl mx-auto relative z-10">
-        <div class="bg-white/60 backdrop-blur-sm border border-latte rounded-[32px] p-8 md:p-10 gsap-fade-up shadow-sm">
-          <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div class="flex-1 text-center md:text-left">
-              <h2 class="font-display text-2xl text-charcoal mb-3">Bahan Utama</h2>
-              <p class="font-body text-mocha font-medium">Butter, Tepung Terigu, Tepung Almond, Telur, & Gula.</p>
-            </div>
-            <div class="hidden md:block w-px h-16 bg-latte/50"></div>
-            <div class="flex-[1.5] bg-rose/5 border border-rose/10 rounded-2xl p-6">
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 shrink-0 rounded-full bg-rose/10 flex items-center justify-center text-rose text-sm border border-rose/20">⚠️</div>
-                <div>
-                  <h4 class="font-display text-sm text-charcoal mb-1 font-bold uppercase tracking-wider">Allergy Warning</h4>
-                  <p class="font-body text-charcoal/70 text-sm leading-relaxed">
-                    Produk mengandung tepung terigu, telur, susu, dan kacang (almond). Seluruh produk bydobie <span class="font-bold text-rose italic underline decoration-rose/30 decoration-2 underline-offset-4">TIDAK Gluten-Free</span>.
-                  </p>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="bg-white/60 backdrop-blur-sm border border-latte rounded-[32px] p-8 md:p-10 gsap-fade-up shadow-sm">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="font-display text-2xl text-charcoal mb-3">Bahan Utama</h2>
+                        <p class="font-body text-mocha font-medium">Butter, Tepung Terigu, Tepung Almond, Telur, & Gula.</p>
+                    </div>
+                    <div class="hidden md:block w-px h-16 bg-latte/50"></div>
+                    <div class="flex-[1.5] bg-rose/5 border border-rose/10 rounded-2xl p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 shrink-0 rounded-full bg-rose/10 flex items-center justify-center text-rose text-sm border border-rose/20">⚠️</div>
+                            <div>
+                                <h4 class="font-display text-sm text-charcoal mb-1 font-bold uppercase tracking-wider">Allergy Warning</h4>
+                                <p class="font-body text-charcoal/70 text-sm leading-relaxed">
+                                    Produk mengandung tepung terigu, telur, susu, dan kacang (almond). Seluruh produk bydobie <span class="font-bold text-rose italic underline decoration-rose/30 decoration-2 underline-offset-4">TIDAK Gluten-Free</span>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- 5. GALLERY SECTION -->
     <section id="gallery-section" class="py-24 px-6 md:px-12 bg-latte/20 relative overflow-hidden">
-      <div class="max-w-6xl mx-auto">
-        <div class="mb-12 relative z-10">
-          <div class="relative inline-block" id="gallery-title-wrapper">
-            <h2 id="gallery" class="font-display text-5xl md:text-7xl text-charcoal relative z-10">Gallery</h2>
-            <div class="absolute bottom-2 left-0 h-4 bg-gradient-to-r from-mocha to-rose opacity-40 rounded-full w-[60%] -z-10"></div>
-          </div>
-        </div>
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12 relative z-10">
+                <div class="relative inline-block" id="gallery-title-wrapper">
+                    <h2 id="gallery" class="font-display text-5xl md:text-7xl text-charcoal relative z-10">Gallery</h2>
+                    <div class="absolute bottom-2 left-0 h-4 bg-gradient-to-r from-mocha to-rose opacity-40 rounded-full w-[60%] -z-10"></div>
+                </div>
+            </div>
 
-        <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-12">
-          <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
-            <img src="/images/gallery_1.jpg" alt="Cookie Art 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Christmas Edition</p>
+            <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-12">
+                <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
+                    <img src="/images/gallery_1.jpg" alt="Cookie Art 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Christmas Edition</p>
+                    </div>
+                </div>
+                <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
+                    <img src="/images/gallery_2.jpg" alt="Cookie Art 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Graduation ITB</p>
+                    </div>
+                </div>
+                <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
+                    <img src="/images/gallery_3.jpg" alt="Cookie Art 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Graduation Girl</p>
+                    </div>
+                </div>
+                <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
+                    <img src="/images/gallery_4.jpg" alt="Cookie Art 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Farewell Badminton Theme</p>
+                    </div>
+                </div>
+                <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
+                    <img src="/images/gallery_5_new.jpg" alt="Cookie Art 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Engagement Box</p>
+                    </div>
+                </div>
+                <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
+                    <img src="/images/gallery_6_new.jpg" alt="Cookie Art 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Birthday Basketball Theme</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
-            <img src="/images/gallery_2.jpg" alt="Cookie Art 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Graduation ITB</p>
-            </div>
-          </div>
-          <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
-            <img src="/images/gallery_3.jpg" alt="Cookie Art 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Graduation Girl</p>
-            </div>
-          </div>
-          <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
-            <img src="/images/gallery_4.jpg" alt="Cookie Art 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Farewell Badminton Theme</p>
-            </div>
-          </div>
-          <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
-            <img src="/images/gallery_5_new.jpg" alt="Cookie Art 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Engagement Box</p>
-            </div>
-          </div>
-          <div class="gsap-gallery-item group relative aspect-[2/3] overflow-hidden rounded-[18px] bg-latte shadow-sm">
-            <img src="/images/gallery_6_new.jpg" alt="Cookie Art 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.07]" width="400" height="600" loading="lazy" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <p class="text-white font-body font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Birthday Basketball Theme</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="text-center gsap-fade-up">
-          <a href="https://www.instagram.com/bydobie/" target="_blank"
-            class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cocoa text-cocoa font-body font-medium hover:bg-cocoa hover:text-white transition-colors">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <div class="text-center gsap-fade-up">
+                <a href="https://www.instagram.com/bydobie/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cocoa text-cocoa font-body font-medium hover:bg-cocoa hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-            </svg>
-            Lihat Lebih Banyak di Instagram
-          </a>
+            </svg> Lihat Lebih Banyak di Instagram
+                </a>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- 7. CTA SECTION -->
     <section id="cta" class="py-24 px-6 md:px-12 relative overflow-hidden bg-gradient-to-br from-[#3A2E28] to-[#8B5E3C]">
-      <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-blush/10 blur-2xl pointer-events-none"></div>
-      <div class="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-cream/5 blur-3xl pointer-events-none"></div>
-      <div class="max-w-4xl mx-auto text-center relative z-10">
-        <h2 class="font-display text-4xl md:text-6xl text-cream mb-6">
-          Bikin momen jadi lebih <span class="italic text-latte">manis</span>
-        </h2>
-        <p class="font-body text-latte/80 mb-10 text-lg md:text-xl gsap-fade-up">
-          Ceritain idemu yuk, biar kita wujudkan dalam bentuk cookies yang cantik.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 gsap-fade-up">
-          <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20saya%20mau%20order%20dong!" target="_blank"
-            class="bg-[#25D366] text-white px-8 py-4 rounded-full font-body font-bold text-base hover:bg-[#1DA851] transition-transform hover:-translate-y-1 shadow-lg shadow-[#25D366]/30 flex items-center gap-2 w-full sm:w-auto justify-center">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-blush/10 blur-2xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-cream/5 blur-3xl pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="font-display text-4xl md:text-6xl text-cream mb-6">
+                Bikin momen jadi lebih <span class="italic text-latte">manis</span>
+            </h2>
+            <p class="font-body text-latte/80 mb-10 text-lg md:text-xl gsap-fade-up">
+                Ceritain idemu yuk, biar kita wujudkan dalam bentuk cookies yang cantik.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 gsap-fade-up">
+                <a href="https://wa.me/6281213881257?text=Halo%20bydobie,%20saya%20mau%20order%20dong!" target="_blank" class="bg-[#25D366] text-white px-8 py-4 rounded-full font-body font-bold text-base hover:bg-[#1DA851] transition-transform hover:-translate-y-1 shadow-lg shadow-[#25D366]/30 flex items-center gap-2 w-full sm:w-auto justify-center">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-            </svg>
-            Order Here
-          </a>
-          <a href="#pricelist" class="px-8 py-4 rounded-full font-body font-medium text-latte border-2 border-latte/50 hover:border-latte hover:bg-latte/10 transition-all w-full sm:w-auto justify-center">
+            </svg> Order Here
+                </a>
+                <a href="#pricelist" class="px-8 py-4 rounded-full font-body font-medium text-latte border-2 border-latte/50 hover:border-latte hover:bg-latte/10 transition-all w-full sm:w-auto justify-center">
             Lihat Pricelist
           </a>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- 8. FOOTER -->
     <footer class="bg-charcoal text-latte/80 py-12 px-6 border-t border-white/10">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="text-center md:text-left">
-          <h4 class="font-display text-2xl text-latte mb-2">bydobie</h4>
-          <p class="font-body text-sm">Handmade with love.</p>
-        </div>
-        <div class="flex gap-6">
-          <a href="https://www.instagram.com/bydobie/" target="_blank" class="hover:text-white transition-colors" aria-label="Instagram">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="font-display text-2xl text-latte mb-2">bydobie</h4>
+                <p class="font-body text-sm">Handmade with love.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/bydobie/" target="_blank" class="hover:text-white transition-colors" aria-label="Instagram">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
             </svg>
-          </a>
-          <a href="https://wa.me/6281213881257" target="_blank" class="hover:text-white transition-colors" aria-label="WhatsApp">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                </a>
+                <a href="https://wa.me/6281213881257" target="_blank" class="hover:text-white transition-colors" aria-label="WhatsApp">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
-          </a>
+                </a>
+            </div>
         </div>
-      </div>
-      <div class="mt-8 text-center border-t border-white/10 pt-8">
-        <p class="font-body text-xs text-latte/50">&copy; 2026 bydobie. All rights reserved.</p>
-      </div>
+        <div class="mt-8 text-center border-t border-white/10 pt-8">
+            <p class="font-body text-xs text-latte/50">&copy; 2026 bydobie. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- App Entry Script -->
     <script type="module" src="/src/main.js"></script>
-  </body>
+</body>
+
 </html>
